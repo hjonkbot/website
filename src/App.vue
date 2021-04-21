@@ -55,4 +55,8 @@
           opacity: .5
         &:hover
           transform: scale(1.1)
+  @media only screen and (max-width: 872px)
+    body
+      nav
+        transform: scale(.45)
 </style>

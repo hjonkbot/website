@@ -48,4 +48,7 @@
           background-color: #fff
           color: #000
           box-shadow: 0px 0px 7px rgba(0, 0, 0, .3)
+  @media only screen and (max-width: 872px)
+    main
+      padding: 1em 1em
 </style>
