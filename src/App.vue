@@ -28,7 +28,9 @@
 
 <style lang="sass">
   @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap')
-  @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap')
+  @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap')
+  :root
+    --primary: #F7630C
   *
     margin: 0
   body
@@ -53,6 +55,4 @@
           opacity: .5
         &:hover,&:focus
           transform: scale(1.1)
-    main
-      padding: 1em 4em
 </style>
