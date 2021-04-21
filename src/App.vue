@@ -53,6 +53,6 @@
           // margin-right: 3em
         &.disabled
           opacity: .5
-        &:hover,&:focus
+        &:hover
           transform: scale(1.1)
 </style>
