@@ -10,7 +10,6 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/github',
     name: 'GitHub',
-    alias: '/gh',
     redirect: () => {
       window.location.replace('https://github.com/hjonkbot');
       return '/github-redirecting';
@@ -19,7 +18,6 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/discord',
     name: 'Discord',
-    alias: ['dc', 'dsc'],
     redirect: () => {
       window.location.replace('https://discord.com'); // TODO: replace with OAuth Discord Bot Invite Link @ejer
       return '/discord-redirecting';
