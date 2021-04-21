@@ -1,30 +1,58 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <nav>
+    <router-link to="/discord">discord</router-link>
+    <router-link to="/twitter" class="disabled">twitter</router-link>
+    <router-link
+      to="/"
+      style="font-size: 2em;line-height:1.3em"
+      v-on:click="playhonk"
+    >
+      🦢
+    </router-link>
+    <router-link to="/messenger" class="disabled">messenger</router-link>
+    <router-link to="/github">github</router-link>
+  </nav>
+  <router-view />
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+  export default {
+    methods: {
+      playhonk() {
+        let audio = new Audio(require('@/assets/honk1.wav'));
+        audio.play();
+      },
+    },
+  };
+</script>
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+<style lang="sass">
+  @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap')
+  @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap')
+  *
+    margin: 0
+  body
+    font-family: 'Gloria Hallelujah', sans-serif
+    font-size: 20px
+    nav
+      // background-color: #c0c0c0
+      padding: .2em 8em
+      display: flex
+      align-items: center
+      justify-content: center
+      a
+        font-size: 1.4em
+        margin: 0 1em
+        color: inherit
+        text-decoration: inherit
+        transition: .2s all ease
+        text-rendering: geometricPrecision
+        &:first-of-type
+          // margin-right: 3em
+        &.disabled
+          opacity: .5
+        &:hover,&:focus
+          transform: scale(1.1)
+    main
+      padding: 1em 4em
 </style>
