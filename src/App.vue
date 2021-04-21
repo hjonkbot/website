@@ -4,7 +4,7 @@
     <router-link to="/twitter" class="disabled">twitter</router-link>
     <router-link
       to="/"
-      style="font-size: 2em;line-height:1.3em"
+      style="font-size: 2em;line-height:1.3em;text-shadow: 2px 2px 15px rgba(0,0,0,.3)"
       v-on:click="playhonk"
     >
       🦢

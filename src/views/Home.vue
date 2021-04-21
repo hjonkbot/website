@@ -12,14 +12,6 @@
       <router-link to="/discord">Invite to your Discord Server</router-link>
     </div>
   </main>
-  <p
-    style="
-      color: #c0c0c0;
-      font-family: sans-serif
-    "
-  >
-    This is a work-in-progress.
-  </p>
 </template>
 
 <script lang="ts">
@@ -40,13 +32,20 @@
     padding: 1em 14em
     h1
       font-family: 'Gloria Hallelujah', sans-serif
+      text-shadow: 2px 2px 15px rgba(0,0,0,.3)
     .btn
       a
-        margin: .5em
+        margin: 1.2em
         display: inline-block
         background-color: var(--primary)
-        padding: 1em
+        padding: .6em
         border-radius: 6px
         color: white
         text-decoration: inherit
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, .3)
+        transition-duration: .2s
+        &:hover,&:focus
+          background-color: #fff
+          color: #000
+          box-shadow: 0px 0px 7px rgba(0, 0, 0, .3)
 </style>
