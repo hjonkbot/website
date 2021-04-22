@@ -19,7 +19,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/discord',
     name: 'Discord',
     redirect: () => {
-      window.location.replace('https://discord.com'); // TODO: replace with OAuth Discord Bot Invite Link @ejer
+      window.location.replace('https://discord.com/api/oauth2/authorize?client_id=705511891715490003&permissions=3411008&scope=bot');
       return '/discord-redirecting';
     },
   },
