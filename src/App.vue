@@ -18,6 +18,7 @@
 <script>
 export default {
 	methods: {
+		// eslint-disable-next-line
 		playhonk() {
 			let audio = new Audio(require("@/assets/honk1.wav"));
 			audio.play();
